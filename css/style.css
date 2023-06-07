@@ -24,13 +24,14 @@ nav {
   width: 100%;
   height: auto;
   background-color: #ffefe7;
-  padding: 20px;
+  padding: 5%;
 }
 nav p {
-  font-size: 1.5em;
+  font-size: 3rem;
   color: #7c6a0a;
 }
 nav .buttons-container button {
+  padding: 8px;
   background: none;
   border-style: none;
 }
@@ -44,6 +45,9 @@ nav .menu-icon {
   nav .menu-icon {
     display: block;
   }
+  nav p {
+    font-size: 1.5rem;
+  }
 }
 
 body {
@@ -51,7 +55,79 @@ body {
 }
 
 .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: auto;
+  padding: 5%;
   background-color: #ffefe7;
+}
+.hero__info {
+  /*     padding: 30px; */
+  color: #7c6a0a;
+}
+.hero__info h1 {
+  font-size: 2.8em;
+}
+.hero__info p {
+  text-align: justify;
+  margin: 18px 0;
+  font-size: 1.2em;
+}
+.hero__info button {
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  background-color: #fa9500;
+  color: #ffefe7;
+  font-family: 13rem;
+  padding: 12px 25px;
+}
+@media (width > 425px) {
+  .hero__info {
+    width: 50%;
+  }
+  .hero__info h1 {
+    font-size: 6rem;
+  }
+  .hero__info p {
+    margin: 61px 25px 108px 0;
+    font-size: 2.5rem;
+  }
+  .hero__info button {
+    font-size: 2.3rem;
+    display: inline;
+  }
+}
+.hero__img {
+  /*   padding: 30px; */
+}
+.hero__img img {
+  width: 100%;
+  max-width: 550px;
+  aspect-ratio: 1/1.2;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 10px;
+}
+@media (width < 426px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: pink;
+}
+.products h2 {
+  color: #7c6a0a;
 }/*# sourceMappingURL=style.css.map */

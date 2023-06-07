@@ -1,0 +1,49 @@
+@import "../core/variables.scss";
+@import "../mixins/mixins.scss";
+
+.products {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: $primary-color;
+
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: $primary-text-color;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 70px;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 70px;
+  }
+  .card {
+    @include card-mixin($primary-text-color, $secundary-color);
+    &--furniture {
+      @include card-mixin($primary-color, $tertiary-color);
+    }
+    &__title {
+      margin-top: 16px;
+      font-size: 1.6rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+    &__favorite {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1.2;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+}

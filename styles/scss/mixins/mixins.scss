@@ -1,0 +1,9 @@
+@mixin card-mixin($color-text, $background) {
+  color: $color-text;
+  background-color: $background;
+  position: relative;
+  width: 240px;
+  border-radius: 5px;
+
+  padding: 40px 35px;
+}
