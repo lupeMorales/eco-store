@@ -1,0 +1,64 @@
+@import "../core/variables.scss";
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: $primary-color;
+
+  &__info {
+    /*     padding: 30px; */
+    color: $primary-text-color;
+
+    h1 {
+      font-size: 2.8em;
+    }
+    p {
+      text-align: justify;
+      margin: 18px 0;
+      font-size: 1.2em;
+    }
+    button {
+      display: block;
+      margin: auto;
+      border: none;
+      border-radius: 50px;
+      background-color: $details-color;
+      color: $primary-color;
+      font-family: 13rem;
+      padding: 12px 25px;
+    }
+
+    @media (width > 425px) {
+      width: 50%;
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        margin: 61px 25px 108px 0;
+        font-size: 2.5rem;
+      }
+      button {
+        font-size: 2.3rem;
+        display: inline;
+      }
+    }
+  }
+  &__img {
+    /*   padding: 30px; */
+
+    img {
+      width: 100%;
+      max-width: 550px;
+      aspect-ratio: 1 / 1.2;
+      object-fit: fill;
+      border-radius: 10px;
+    }
+  }
+  @media (width < 426px) {
+    flex-direction: column-reverse;
+  }
+}

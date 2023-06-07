@@ -1,0 +1,37 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: #ffefe7;
+  padding: 5%;
+}
+nav p {
+  font-size: 3rem;
+  color: #7c6a0a;
+}
+nav .buttons-container button {
+  padding: 8px;
+  background: none;
+  border-style: none;
+}
+nav .menu-icon {
+  display: none;
+}
+@media (width < 426px) {
+  nav .buttons-container {
+    display: none;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav p {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=nav.css.map */

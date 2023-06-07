@@ -8,14 +8,14 @@ nav {
   width: 100%;
   height: auto;
   background-color: $primary-color;
-  padding: 20px;
-
+  padding: 5%;
   p {
-    font-size: 1.5em;
+    font-size: 3rem;
     color: $primary-text-color;
   }
   .buttons-container {
     button {
+      padding: 8px;
       background: none;
       border-style: none;
     }
@@ -29,6 +29,9 @@ nav {
     }
     .menu-icon {
       display: block;
+    }
+    p {
+      font-size: 1.5rem;
     }
   }
 }
