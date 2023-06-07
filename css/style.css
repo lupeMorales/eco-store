@@ -122,12 +122,63 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+/* @import "../mixins/mixins.scss"; */
 .products {
   width: 100%;
   height: auto;
   padding: 5%;
-  background-color: pink;
+  background-color: #ffefe7;
 }
 .products h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
   color: #7c6a0a;
+}
+.products .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 70px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+.products .card {
+  color: #7c6a0a;
+  background-color: #ffdac6;
+  position: relative;
+  width: 240px;
+  border-radius: 5px;
+  padding: 40px 35px;
+}
+.products .card--furniture {
+  color: #ffefe7;
+  background-color: #babd8d;
+  position: relative;
+  width: 240px;
+  border-radius: 5px;
+  padding: 40px 35px;
+}
+.products .card__title {
+  margin-top: 16px;
+  font-size: 1.6rem;
+}
+.products .card__text {
+  font-size: 1rem;
+}
+.products .card__favorite {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.products .card__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1.2;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
