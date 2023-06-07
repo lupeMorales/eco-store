@@ -1,0 +1,34 @@
+@import "../core/variables.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: $primary-color;
+  padding: 20px;
+
+  p {
+    font-size: 1.5em;
+    color: $primary-text-color;
+  }
+  .buttons-container {
+    button {
+      background: none;
+      border-style: none;
+    }
+  }
+  .menu-icon {
+    display: none;
+  }
+  @media (width < 426px) {
+    .buttons-container {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+}
