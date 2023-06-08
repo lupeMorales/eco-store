@@ -139,6 +139,16 @@ body {
   justify-content: space-between;
   margin-top: 50px;
   padding-bottom: 70px;
+  cursor: pointer;
+}
+@media (width < 625px) {
+  .products .cards-container {
+    width: 100%;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    justify-content: initial;
+    cursor: pointer;
+  }
 }
 .products .card {
   color: #7c6a0a;
@@ -148,6 +158,9 @@ body {
   border-radius: 5px;
   padding: 40px 35px;
 }
+.products .card svg path {
+  stroke: #7c6a0a;
+}
 .products .card--furniture {
   color: #ffefe7;
   background-color: #babd8d;
@@ -155,6 +168,9 @@ body {
   width: 240px;
   border-radius: 5px;
   padding: 40px 35px;
+}
+.products .card--furniture svg path {
+  stroke: #ffefe7;
 }
 .products .card__title {
   margin-top: 16px;

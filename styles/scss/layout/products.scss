@@ -18,11 +18,25 @@
     justify-content: space-between;
     margin-top: 50px;
     padding-bottom: 70px;
+    cursor: pointer;
+
+    @media (width < 625px) {
+      width: 100%;
+      grid-auto-flow: column;
+      overflow-x: scroll;
+      justify-content: initial;
+      cursor: pointer;
+    }
   }
+
   .card {
-    @include card-mixin($primary-text-color, $secundary-color);
+    @include card-mixin(
+      $primary-text-color,
+      $secundary-color,
+      $primary-text-color
+    );
     &--furniture {
-      @include card-mixin($primary-color, $tertiary-color);
+      @include card-mixin($primary-color, $tertiary-color, $primary-color);
     }
     &__title {
       margin-top: 16px;
