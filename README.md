@@ -15,8 +15,6 @@ Eco-store is a landing page for a catalog of health care and home decoration pro
 - [Contact](#contact)
 
 
-
-
 ## Overview
 
 ### The challenge
