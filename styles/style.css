@@ -64,7 +64,6 @@ body {
   background-color: #ffefe7;
 }
 .hero__info {
-  /*     padding: 30px; */
   color: #7c6a0a;
 }
 .hero__info h1 {
@@ -319,6 +318,47 @@ body {
 }
 .location .address p:nth-child(2) {
   font-size: 2rem;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  gap: 20px;
+  background-color: #fa9500;
+  color: #ffefe7;
+}
+footer h3 {
+  font-size: 2.1rem;
+}
+footer .social-media {
+  margin: auto;
+}
+@media (width < 426px) {
+  footer .social-media {
+    margin-left: 0;
+  }
+}
+footer ul {
+  list-style: none;
+  font-size: 1.4rem;
+}
+footer ul li {
+  margin-bottom: 15px;
+}
+footer button {
+  padding: 5px;
+  background: none;
+  border-style: none;
+}
+footer button img {
+  width: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
