@@ -270,19 +270,55 @@ body {
   flex-wrap: wrap;
   column-gap: 15px;
   row-gap: 50px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .gallery__container figure {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  flex-shrink: 3;
 }
 .gallery__container img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 15px;
   object-fit: cover;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.location {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: #ffefe7;
+}
+.location h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #7c6a0a;
+}
+.location figure {
+  width: 100%;
+  max-width: 1300px;
+  margin: 50px auto;
+}
+.location img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.location .address {
+  font-weight: 400;
+  color: #e86424;
+}
+.location .address p:nth-child(1) {
+  font-size: 3rem;
+}
+.location .address p:nth-child(2) {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

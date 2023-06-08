@@ -1,0 +1,36 @@
+@import "../core/variables.scss";
+
+.location {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  background-color: $primary-color;
+
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: $primary-text-color;
+  }
+  figure {
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  .address {
+    font-weight: 400;
+    color: $special-text-color;
+
+    p:nth-child(1) {
+      font-size: 3rem;
+    }
+    p:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
+}
