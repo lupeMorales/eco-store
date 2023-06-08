@@ -5,11 +5,7 @@
   height: auto;
   padding: 5%;
   background-color: $primary-color;
-
-  h2 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    color: $primary-text-color;
+  .map {
   }
   figure {
     width: 100%;
@@ -21,16 +17,25 @@
     aspect-ratio: 2 / 1;
     border-radius: 15px;
     object-fit: cover;
+    @media (width < 769px) {
+      aspect-ratio: 1 / 2;
+    }
   }
   .address {
     font-weight: 400;
     color: $special-text-color;
 
     p:nth-child(1) {
-      font-size: 3rem;
+      font-size: 3.2rem;
+      @media (width < 769px) {
+        font-size: 2.5rem;
+      }
     }
     p:nth-child(2) {
       font-size: 2rem;
+      @media (width < 769px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

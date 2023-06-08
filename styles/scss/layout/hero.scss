@@ -10,15 +10,12 @@
   background-color: $primary-color;
 
   &__info {
-    color: $primary-text-color;
+    padding-top: 15px;
 
-    h1 {
-      font-size: 2.8em;
-    }
-    p {
+    .text {
       text-align: justify;
       margin: 18px 0;
-      font-size: 1.2em;
+      @include text($primary-text-color);
     }
     button {
       display: block;
@@ -31,14 +28,10 @@
       padding: 12px 25px;
     }
 
-    @media (width > 425px) {
+    @media (width > 768px) {
       width: 50%;
-      h1 {
-        font-size: 6rem;
-      }
-      p {
-        margin: 61px 25px 108px 0;
-        font-size: 2.5rem;
+      .text {
+        margin: 61px 25px 100px 0;
       }
       button {
         font-size: 2.3rem;
@@ -47,8 +40,6 @@
     }
   }
   &__img {
-    /*   padding: 30px; */
-
     img {
       width: 100%;
       max-width: 550px;
@@ -57,7 +48,7 @@
       border-radius: 10px;
     }
   }
-  @media (width < 426px) {
+  @media (width < 769px) {
     flex-direction: column-reverse;
   }
 }

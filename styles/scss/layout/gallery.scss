@@ -6,12 +6,6 @@
   padding: 5%;
   background-color: $primary-color;
 
-  h2 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    color: $primary-text-color;
-  }
-
   &__container {
     width: auto;
     display: flex;
@@ -24,7 +18,7 @@
 
     figure {
       width: 100%;
-      max-width: 400px;
+      max-width: 320px;
       margin: 0 auto;
     }
     img {

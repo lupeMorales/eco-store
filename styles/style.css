@@ -12,6 +12,35 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.logo {
+  font-size: 3rem;
+}
+@media (width < 426px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  font-size: 6rem;
+  color: #7c6a0a;
+}
+@media (width < 426px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  color: #7c6a0a;
+}
+@media (width < 426px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -26,8 +55,7 @@ nav {
   background-color: #ffefe7;
   padding: 5%;
 }
-nav p {
-  font-size: 3rem;
+nav .logo {
   color: #7c6a0a;
 }
 nav .buttons-container button {
@@ -64,15 +92,18 @@ body {
   background-color: #ffefe7;
 }
 .hero__info {
-  color: #7c6a0a;
+  padding-top: 15px;
 }
-.hero__info h1 {
-  font-size: 2.8em;
-}
-.hero__info p {
+.hero__info .text {
   text-align: justify;
   margin: 18px 0;
-  font-size: 1.2em;
+  font-size: 2.5rem;
+  color: #7c6a0a;
+}
+@media (width < 426px) {
+  .hero__info .text {
+    font-size: 1.2rem;
+  }
 }
 .hero__info button {
   display: block;
@@ -84,24 +115,17 @@ body {
   font-family: 13rem;
   padding: 12px 25px;
 }
-@media (width > 425px) {
+@media (width > 768px) {
   .hero__info {
     width: 50%;
   }
-  .hero__info h1 {
-    font-size: 6rem;
-  }
-  .hero__info p {
-    margin: 61px 25px 108px 0;
-    font-size: 2.5rem;
+  .hero__info .text {
+    margin: 61px 25px 100px 0;
   }
   .hero__info button {
     font-size: 2.3rem;
     display: inline;
   }
-}
-.hero__img {
-  /*   padding: 30px; */
 }
 .hero__img img {
   width: 100%;
@@ -110,7 +134,7 @@ body {
   object-fit: fill;
   border-radius: 10px;
 }
-@media (width < 426px) {
+@media (width < 769px) {
   .hero {
     flex-direction: column-reverse;
   }
@@ -126,14 +150,9 @@ body {
   padding: 5%;
   background-color: #ffefe7;
 }
-.products h2 {
-  font-size: 4.5rem;
-  font-weight: 400;
-  color: #7c6a0a;
-}
 .products .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(auto-fill, 260px);
   gap: 70px;
   justify-content: space-between;
   margin-top: 50px;
@@ -153,7 +172,7 @@ body {
   color: #7c6a0a;
   background-color: #ffdac6;
   position: relative;
-  width: 240px;
+  width: 260px;
   border-radius: 5px;
   padding: 40px 35px;
 }
@@ -164,7 +183,7 @@ body {
   color: #ffefe7;
   background-color: #babd8d;
   position: relative;
-  width: 240px;
+  width: 260px;
   border-radius: 5px;
   padding: 40px 35px;
 }
@@ -223,26 +242,16 @@ body {
     width: 90%;
   }
 }
-.about__article p {
+.about__article .text {
   padding-top: 15px;
-  font-size: 2.2rem;
   font-weight: 500;
   text-align: center;
+  font-size: 2.5rem;
   color: #e86424;
 }
 @media (width < 426px) {
-  .about__article p {
-    font-size: 1.6rem;
-  }
-}
-
-h2 {
-  font-size: 4.5rem;
-  color: #7c6a0a;
-}
-@media (width < 426px) {
-  h2 {
-    font-size: 2rem;
+  .about__article .text {
+    font-size: 1.2rem;
   }
 }
 
@@ -256,11 +265,6 @@ body {
   padding: 5%;
   background-color: #ffefe7;
 }
-.gallery h2 {
-  font-size: 4.5rem;
-  font-weight: 400;
-  color: #7c6a0a;
-}
 .gallery__container {
   width: auto;
   display: flex;
@@ -273,7 +277,7 @@ body {
 }
 .gallery__container figure {
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
   margin: 0 auto;
 }
 .gallery__container img {
@@ -293,11 +297,6 @@ body {
   padding: 5%;
   background-color: #ffefe7;
 }
-.location h2 {
-  font-size: 4.5rem;
-  font-weight: 400;
-  color: #7c6a0a;
-}
 .location figure {
   width: 100%;
   max-width: 1300px;
@@ -309,15 +308,30 @@ body {
   border-radius: 15px;
   object-fit: cover;
 }
+@media (width < 769px) {
+  .location img {
+    aspect-ratio: 1/2;
+  }
+}
 .location .address {
   font-weight: 400;
   color: #e86424;
 }
 .location .address p:nth-child(1) {
-  font-size: 3rem;
+  font-size: 3.2rem;
+}
+@media (width < 769px) {
+  .location .address p:nth-child(1) {
+    font-size: 2.5rem;
+  }
 }
 .location .address p:nth-child(2) {
   font-size: 2rem;
+}
+@media (width < 769px) {
+  .location .address p:nth-child(2) {
+    font-size: 1.5rem;
+  }
 }
 
 body {
@@ -333,9 +347,6 @@ footer {
   gap: 20px;
   background-color: #fa9500;
   color: #ffefe7;
-}
-footer h3 {
-  font-size: 2.1rem;
 }
 footer .social-media {
   margin: auto;

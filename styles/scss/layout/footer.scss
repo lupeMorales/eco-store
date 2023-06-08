@@ -9,9 +9,7 @@ footer {
   gap: 20px;
   background-color: $details-color;
   color: $primary-color;
-  h3 {
-    font-size: 2.1rem;
-  }
+
   .social-media {
     margin: auto;
     @media (width < 426px) {
