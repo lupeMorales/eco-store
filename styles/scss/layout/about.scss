@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 70px;
-    @media (width < 426px) {
+    @media (width < 726px) {
       flex-direction: column;
     }
   }
