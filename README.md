@@ -1,4 +1,4 @@
-# eco-store <span> | </span>  <a href="https://lupemorales.github.io/anime/" target="_blank">   Demo </a><span> | </span>
+# eco-store <span> | </span>  <a href="https://lupemorales.github.io/eco-store/" target="_blank">   Demo </a><span> | </span>
 
 Eco-store is a landing page for a catalog of health care and home decoration products.
 
@@ -22,6 +22,8 @@ Use Sass to create the web page with several sessions of own styles following th
 
 - Structure a style sheet.
 - Use mixins to reuse already defined styles.
+- Responsive design.
+- Horizontal scroll.
 
 ### Screenshot
 
